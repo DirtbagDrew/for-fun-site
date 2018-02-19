@@ -28,6 +28,7 @@ body {
 	background: lightgray;
   z-index: 2;
   position:relative;
+  font-family: Verdana, sans-serif;
 }
 
 .maintext

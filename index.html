@@ -10,10 +10,11 @@
 	<img style="float:right"; src="images/lb_logo.png" alt="CSULB logo" width=80 height=80>
 </div>
 <div class="topnav">
-	<a href="home.html">Home</a>
-  <a href="index.html">Resume</a>
+	<a href="index.html">Home</a>
+  <a href="resume.html">Resume</a>
   <a href="portfolio.html">Portfolio</a>
   <a href="contact.html">Contact</a>
+	<a href="more.html">About Andrew</a>
 </div>
 
 <br>
@@ -22,62 +23,55 @@
 <br>
 <br>
 <br>
-<div class="row">
-	<div class="column1">
-	</div>
-	<div class="column2">
-		<!--<img src="IMG_5513.jpg" alt="portrait picture of Andrew Myer" width = 200 height=300>-->
-		<div class = "maintext">
-			<h3>Education</h3>
-				<h4>California State University, Long Beach</h4>
-					<p>4th year CSULB student majoring in computer science with a minor in cyber security</p>
-					<p>GPA: 3.2</p>
-		</div>
 
+<h1>Goal: To obtain an internship in the field of computer science</h1>
 
-		<br>
+<div class="slideshow-container">
 
-		<div class = "maintext">
-		<h3>Relevant Job Experience</h3>
-			<h4>Intern - DMB Risk Solutions</h4>
-				<p>9/2017-Present</p>
-				<p>Set up and assist in maintaining a test server for the company website.
-				This includes debugging, installing security certificates and vulnerability testing. </p>
-			<h4>IT Tech - Greiger Relocation Services</h4>
-				<p>5/2017-Present</p>
-				<p>Work with other IT departments to package office equipment and set them up at a new location. </p>
-			<h4>Lifeguard - Associated Students Inc.</h4>
-				<p>7/2016-Present</p>
-				<p>Trained and certified in CPR and first aid along with skills to safely extract people from the pool.
-				This requires constant vigilance to ensure the safety of all</p>
-		</div>
-
-		<br>
-
-		<div class = "maintext">
-		<h3>Relevant Skills</h3>
-			<p>I have experience in Python, Java, PHP, SQL, C++, MIPS assembly, HTML, along with Windows and Linux. I am a hard worker
-			and have great communication skills.</p>
-		</div>
-
-		<br>
-
-		<div class = "maintext">
-		<h3>References</h3>
-			<h4>MICHAEL FREEMAN, AQUATICS COORDINATOR ASSOCIATED STUDENTS INC.</h4>
-				<p>(215) 681-3999</p>
-		 	<h4>PETE STEINER, MANAGER IT SERVICES GEIGER RELOCATION SOLUTIONS</h4>
-				<p>(949) 813-5766</p>
-			<h4>DREW BARBER, OWNER DMB RISK SOLUTIONS<h4>
-				<p>(714) 992-2875</p>
-		</div>
-
-	</div>
-	<div class="column3">
-		<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-		<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="andrewmyer"><a class="LI-simple-link" href='https://www.linkedin.com/in/andrewmyer?trk=profile-badge'>Andrew Myer</a></div>
-	</div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/fingerprint.jpg" style="width:100%">
 </div>
 
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/board.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/computer.jpg" style="height:100%; width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
